@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+         body{
+            background: #f2f2f2 ;
+            backdrop-filter: blur(5px) ;
+           background-size: cover;
+           font-family: GillSans;
+           font-size: 17px;
+           font-weight: 100;
+        }
+        .box {
+            width: 600px;
+            background: black;
+             margin: auto;
+            margin-top: 5%;
+            color: white;
+            font-family: GillSans;
+            font-size: 19px;
+        }
+        #box {
+            padding: 50px;
+        }
+  
+
+.card {
+  margin: 30px auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+
+/*
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  transition: 0.4s;
+}
+ */
+
+    </style>
+</head>
+
+<header>
+    
+<div class="navbar-fixed">
+    
+    <nav class="black">
+    
+         
+       <div class="nav-wrapper"> 
+        <div class="container">
+            <a href="#" class="brand-logo center  white-text darken-4">First Response</a>
+            <a href="#" class="sidenav-trigger" data-target="links"><i class="material-icons white-text">menu</i></a>
+           
+        <ul class="hide-on-med-and-down">
+            <li><a href="the fershe cards.html" class="white-text">Home</a></li>
+            <li><a href="my grid page.html" class="white-text">About Us</a></li>
+            <li><a href="contact us.html" class="white-text">Hospitals Nearby</a></li>
+
+        </ul>
+        </div>
+        </div>
+        <ul class="sidenav" id="links">
+            <li><a href="the fershe cards.html">Home</a></li>
+            <li><a href="my grid page.html">About Us</a></li>
+            <li><a href="contact us.html">Hospitals Nearby</a></li>
+          </ul>
+              
+    </nav>  
+     
+</div>
+    </header>
+<body>
+   
+    <div class="container" >
+    <div class="box" id="box" >
+        <input type="text" class="weatherInput" placeholder="What's your emergency?">    
+       <input type="submit" class="btn white black-text center-align">
+      
+     </div>
+        <div class="weatherInfo center">
+            
+            <h4 class="name"> </h4>
+            <h4 class="country"> </h4>
+            <h4 class="temp">  </h4>
+            <h4 class="humidity"></h4>
+            <h4 class="desc"></h4>
+        </div> <br> 
+       
+    </div> <br>
+    
+    </div>
+    <div class="container">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 m6 s6">
+               <div class="card 1">
+                    <div class="card_image"> <img src="inhaler.jpg" /> </div>
+                    <div class="card_title title-white">
+                    <p>Asthma Attack</p>
+                    </div>
+                </div>
+                </div>
+            
+            <div class="col l6 m6 s6">
+                <div class="card 1">
+                    <div class="card_image"> <img src="inhaler.jpg" /> </div>
+                    <div class="card_title title-white">
+                      <p>Burns</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+        <div class="container">   
+            <div class="row">
+            <div class="col l6 m6 s6">
+                <div class="card 1">
+                    <div class="card_image"> <img src="inhaler.jpg" /> </div>
+                    <div class="card_title title-white">
+                      <p>Sprain</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col l6 m6 s6">
+                <div class="card 1">
+                    <div class="card_image"> <img src="inhaler.jpg" /> </div>
+                    <div class="card_title title-white">
+                      <p>Cuts</p>
+                    </div>
+                  </div>
+            </div>
+            </div>
+        </div>
+</div>
+
+
+
+
+
+
+
+    
+    
+<footer class="page-footer white-text black">
+    <div class="container">
+    <div class="row">
+        <div class="col m6 s6 l6">
+            <p>Quick Links</p>
+            <ul>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+            </ul>
+        </div>     
+    </div>
+    <div class="footer-copyrightwhite-text">
+        <div class="container">
+        <p clas>Designed by Nonye for <a href="https://pearlsafrica.org"> Pearls Africa</a></p>
+        </div>
+    </div> 
+    </div>
+</footer>
+<script src="weather.js"> </script>
+<script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+     
+    });
+</script>
+</body>
+</html>
