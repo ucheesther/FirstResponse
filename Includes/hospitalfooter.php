@@ -160,6 +160,7 @@
             } else {
               document.getElementById("autocomplete").placeholder = "Enter your location";
             }
+            
           }
           
           // Search for hospital in the selected city, within the viewport of the map.
